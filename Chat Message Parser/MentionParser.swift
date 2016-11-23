@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MessageParser: Parser {
+struct MentionParser: Parser {
     
     internal var internalExpression: NSRegularExpression?
     internal var pattern: String = "@\\w+"

@@ -27,7 +27,7 @@ enum MessageDataType {
     var parser: Parser {
         switch (self) {
         case .Mentions:
-            return MessageParser()
+            return MentionParser()
         case .Emoticons:
             return EmoticonParser()
         case .Links:
