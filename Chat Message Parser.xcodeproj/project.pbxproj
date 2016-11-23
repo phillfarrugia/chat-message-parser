@@ -29,6 +29,9 @@
 		F7B995241DE555E800925B23 /* EmoticonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995231DE555E800925B23 /* EmoticonParser.swift */; };
 		F7B995261DE555FC00925B23 /* LinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995251DE555FC00925B23 /* LinkParser.swift */; };
 		F7C27F421DE5A11A00447C20 /* MentionParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */; };
+		F7C27F441DE5A68E00447C20 /* EmoticonParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C27F431DE5A68E00447C20 /* EmoticonParserSpec.swift */; };
+		F7C27F451DE5A6A100447C20 /* EmoticonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995231DE555E800925B23 /* EmoticonParser.swift */; };
+		F7C27F461DE5A6A300447C20 /* LinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995251DE555FC00925B23 /* LinkParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,7 @@
 		F7B995231DE555E800925B23 /* EmoticonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonParser.swift; sourceTree = "<group>"; };
 		F7B995251DE555FC00925B23 /* LinkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkParser.swift; sourceTree = "<group>"; };
 		F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionParserSpec.swift; sourceTree = "<group>"; };
+		F7C27F431DE5A68E00447C20 /* EmoticonParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonParserSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 				F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */,
 				F75D0E651DE59901008A0597 /* MockValidParser.swift */,
 				F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */,
+				F7C27F431DE5A68E00447C20 /* EmoticonParserSpec.swift */,
 				F7B995101DE5430300925B23 /* Info.plist */,
 			);
 			path = "Chat Message ParserTests";
@@ -281,7 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C27F461DE5A6A300447C20 /* LinkParser.swift in Sources */,
 				F75D0E631DE598A6008A0597 /* MockInvalidParser.swift in Sources */,
+				F7C27F441DE5A68E00447C20 /* EmoticonParserSpec.swift in Sources */,
+				F7C27F451DE5A6A100447C20 /* EmoticonParser.swift in Sources */,
 				F75D0E661DE59901008A0597 /* MockValidParser.swift in Sources */,
 				F7B9950F1DE5430300925B23 /* Chat_Message_ParserTests.swift in Sources */,
 				F7C27F421DE5A11A00447C20 /* MentionParserSpec.swift in Sources */,
