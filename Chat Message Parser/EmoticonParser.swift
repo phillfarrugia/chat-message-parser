@@ -20,4 +20,10 @@ struct EmoticonParser: Parser {
         }
     }
     
+    func sanitize(values: [String]) -> [String] {
+        return values.map {
+            return $0.replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
+        }
+    }
+    
 }
