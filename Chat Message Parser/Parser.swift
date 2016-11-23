@@ -15,7 +15,8 @@ protocol Parser {
     
     init()
     func matches(in string: String) -> [AnyObject]
-    
+    func values(in string: String, for matches: [NSTextCheckingResult]) -> [String]
+    func sanitize(values: [String]) -> [String]
 }
 
 extension Parser {
@@ -23,7 +24,7 @@ extension Parser {
     func matches(in string: String) -> [AnyObject] {
         guard let internalExpression = self.internalExpression else { return [] }
         let matches = internalExpression.matches(in: string, range: NSMakeRange(0, string.characters.count))
-        return values(in: string, for: matches) as [AnyObject]
+        return sanitize(values: values(in: string, for: matches)) as [AnyObject]
     }
     
     internal func values(in string: String, for matches: [NSTextCheckingResult]) -> [String] {
@@ -33,6 +34,10 @@ extension Parser {
             }
             return nil
         }.flatMap { $0 }
+    }
+    
+    internal func sanitize(values: [String]) -> [String] {
+        return values
     }
 
 }
