@@ -9,60 +9,34 @@
 import Quick
 import Nimble
 
-class ParserSpec: QuickSpec {
+class MentionParserSpec: QuickSpec {
     
-    let invalidParser = MockInvalidParser()
-    let validParser = MockValidParser()
+    let mentionParser = MentionParser()
     
     override func spec() {
         
         describe("matches in string") {
-            context("valid regular expression", {
-                context("input contains matches", {
-                    it("should return an array containing a single match", closure: {
-                        expect(self.validParser.internalExpression).toNot(beNil())
-                        expect(self.validParser.matches(in: "&sample").count).to(equal(1))
-                    })
-                    
-                    it("should return an array containing multiple matches", closure: {
-                        expect(self.validParser.internalExpression).toNot(beNil())
-                        expect(self.validParser.matches(in: "&sample &sample").count).to(equal(2))
-                        expect(self.validParser.matches(in: "&sample &test &hello").count).to(equal(3))
-                        expect(self.validParser.matches(in: "&one &two &three &four").count).to(equal(4))
-                    })
-                })
-                
-                context("input doesn't contains matches", {
-                    it("should return an empty array", closure: {
-                        expect(self.validParser.matches(in: "no matches here").count).to(equal(0))
-                        expect(self.validParser.matches(in: "").count).to(equal(0))
-                        expect(self.validParser.matches(in: "    ").count).to(equal(0))
-                    })
-                })
-                
+            it("should match a mention starting with an @ symbol", closure: {
+                expect(self.mentionParser.matches(in: "@chris you around?") as? [String]).to(equal(["@chris"]))
+                expect(self.mentionParser.matches(in: "@phill22 you around?") as? [String]).to(equal(["@phill22"]))
+                expect(self.mentionParser.matches(in: "where is @melissa") as? [String]).to(equal(["@melissa"]))
             })
             
-            context("invalid regular expression", {
-                it("should return an empty array", closure: {
-                    expect(self.invalidParser.internalExpression).to(beNil())
-                    expect(self.invalidParser.matches(in: "sample input string").count).to(equal(0))
-                    expect(self.invalidParser.matches(in: "@mention @name @sample").count).to(equal(0))
-                    expect(self.invalidParser.matches(in: "\thisIsAnInvalidRegexPattern/\\").count).to(equal(0))
-                })
+            it("should end when hitting a non-word character", closure: {
+                expect(self.mentionParser.matches(in: "where is @melissa?") as? [String]).to(equal(["@melissa"]))
+                expect(self.mentionParser.matches(in: "what about @phill, is he coming?") as? [String]).to(equal(["@phill"]))
+                expect(self.mentionParser.matches(in: "go @chris!") as? [String]).to(equal(["@chris"]))
             })
-        }
-        
-        describe("values in string for matches") {
-            it("should map NSTextCheckingResults into correct string values", closure: {
-                let sampleString = "this is an &sample"
-                let matchResults = self.validParser.internalExpression?.matches(in: sampleString, range: NSMakeRange(0, sampleString.characters.count))
-                expect(self.validParser.values(in: sampleString, for: matchResults!)).to(equal(["&sample"]))
+            
+            it("should match multiple mentions", closure: {
+                expect(self.mentionParser.matches(in: "@phill @chris @jack") as? [String]).to(equal(["@phill", "@chris", "@jack"]))
+                expect(self.mentionParser.matches(in: "waiting for @jack and @jill") as? [String]).to(equal(["@jack", "@jill"]))
             })
-
-            it("should handle NSTextCheckingResults not contained in string", closure: {
-                let sampleString = "this is an &sample"
-                let matchResults = self.validParser.internalExpression?.matches(in: sampleString, range: NSMakeRange(0, sampleString.characters.count))
-                expect(self.validParser.values(in: "not", for: matchResults!)).to(equal([]))
+            
+            it("should not match if no mentions", closure: {
+                expect(self.mentionParser.matches(in: "") as? [String]).to(equal([]))
+                expect(self.mentionParser.matches(in: "a lot of words but no mentions here") as? [String]).to(equal([]))
+                expect(self.mentionParser.matches(in: "is it @ the cafe?") as? [String]).to(equal([]))
             })
         }
         

@@ -12,7 +12,7 @@
 		F75D0E591DE59545008A0597 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; };
 		F75D0E5B1DE59557008A0597 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F75D0E561DE59545008A0597 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F75D0E5C1DE59557008A0597 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F75D0E601DE595A2008A0597 /* MentionParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E5F1DE595A2008A0597 /* MentionParserSpec.swift */; };
+		F75D0E601DE595A2008A0597 /* ParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E5F1DE595A2008A0597 /* ParserSpec.swift */; };
 		F75D0E611DE5986D008A0597 /* MentionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995211DE555D900925B23 /* MentionParser.swift */; };
 		F75D0E631DE598A6008A0597 /* MockInvalidParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */; };
 		F75D0E641DE598C3008A0597 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995191DE5450F00925B23 /* Parser.swift */; };
@@ -28,6 +28,7 @@
 		F7B995221DE555D900925B23 /* MentionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995211DE555D900925B23 /* MentionParser.swift */; };
 		F7B995241DE555E800925B23 /* EmoticonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995231DE555E800925B23 /* EmoticonParser.swift */; };
 		F7B995261DE555FC00925B23 /* LinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995251DE555FC00925B23 /* LinkParser.swift */; };
+		F7C27F421DE5A11A00447C20 /* MentionParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,7 @@
 		F75D0E501DE5686B008A0597 /* MessageDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataType.swift; sourceTree = "<group>"; };
 		F75D0E561DE59545008A0597 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		F75D0E571DE59545008A0597 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		F75D0E5F1DE595A2008A0597 /* MentionParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionParserSpec.swift; sourceTree = "<group>"; };
+		F75D0E5F1DE595A2008A0597 /* ParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserSpec.swift; sourceTree = "<group>"; };
 		F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockInvalidParser.swift; sourceTree = "<group>"; };
 		F75D0E651DE59901008A0597 /* MockValidParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockValidParser.swift; sourceTree = "<group>"; };
 		F7B994F61DE5430300925B23 /* Chat Message Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Message Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +77,7 @@
 		F7B995211DE555D900925B23 /* MentionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionParser.swift; sourceTree = "<group>"; };
 		F7B995231DE555E800925B23 /* EmoticonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonParser.swift; sourceTree = "<group>"; };
 		F7B995251DE555FC00925B23 /* LinkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkParser.swift; sourceTree = "<group>"; };
+		F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionParserSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				F7B9950E1DE5430300925B23 /* Chat_Message_ParserTests.swift */,
-				F75D0E5F1DE595A2008A0597 /* MentionParserSpec.swift */,
+				F75D0E5F1DE595A2008A0597 /* ParserSpec.swift */,
 				F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */,
 				F75D0E651DE59901008A0597 /* MockValidParser.swift */,
+				F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */,
 				F7B995101DE5430300925B23 /* Info.plist */,
 			);
 			path = "Chat Message ParserTests";
@@ -281,9 +284,10 @@
 				F75D0E631DE598A6008A0597 /* MockInvalidParser.swift in Sources */,
 				F75D0E661DE59901008A0597 /* MockValidParser.swift in Sources */,
 				F7B9950F1DE5430300925B23 /* Chat_Message_ParserTests.swift in Sources */,
+				F7C27F421DE5A11A00447C20 /* MentionParserSpec.swift in Sources */,
 				F75D0E641DE598C3008A0597 /* Parser.swift in Sources */,
 				F75D0E611DE5986D008A0597 /* MentionParser.swift in Sources */,
-				F75D0E601DE595A2008A0597 /* MentionParserSpec.swift in Sources */,
+				F75D0E601DE595A2008A0597 /* ParserSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
