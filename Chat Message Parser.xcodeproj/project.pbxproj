@@ -13,6 +13,10 @@
 		F75D0E5B1DE59557008A0597 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F75D0E561DE59545008A0597 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F75D0E5C1DE59557008A0597 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F75D0E601DE595A2008A0597 /* MentionParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E5F1DE595A2008A0597 /* MentionParserSpec.swift */; };
+		F75D0E611DE5986D008A0597 /* MentionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995211DE555D900925B23 /* MentionParser.swift */; };
+		F75D0E631DE598A6008A0597 /* MockInvalidParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */; };
+		F75D0E641DE598C3008A0597 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995191DE5450F00925B23 /* Parser.swift */; };
+		F75D0E661DE59901008A0597 /* MockValidParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E651DE59901008A0597 /* MockValidParser.swift */; };
 		F7B994FA1DE5430300925B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994F91DE5430300925B23 /* AppDelegate.swift */; };
 		F7B994FC1DE5430300925B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994FB1DE5430300925B23 /* ViewController.swift */; };
 		F7B994FF1DE5430300925B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B994FD1DE5430300925B23 /* Main.storyboard */; };
@@ -55,6 +59,8 @@
 		F75D0E561DE59545008A0597 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		F75D0E571DE59545008A0597 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		F75D0E5F1DE595A2008A0597 /* MentionParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionParserSpec.swift; sourceTree = "<group>"; };
+		F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockInvalidParser.swift; sourceTree = "<group>"; };
+		F75D0E651DE59901008A0597 /* MockValidParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockValidParser.swift; sourceTree = "<group>"; };
 		F7B994F61DE5430300925B23 /* Chat Message Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Message Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B994F91DE5430300925B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B994FB1DE5430300925B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +150,8 @@
 			children = (
 				F7B9950E1DE5430300925B23 /* Chat_Message_ParserTests.swift */,
 				F75D0E5F1DE595A2008A0597 /* MentionParserSpec.swift */,
+				F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */,
+				F75D0E651DE59901008A0597 /* MockValidParser.swift */,
 				F7B995101DE5430300925B23 /* Info.plist */,
 			);
 			path = "Chat Message ParserTests";
@@ -270,7 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75D0E631DE598A6008A0597 /* MockInvalidParser.swift in Sources */,
+				F75D0E661DE59901008A0597 /* MockValidParser.swift in Sources */,
 				F7B9950F1DE5430300925B23 /* Chat_Message_ParserTests.swift in Sources */,
+				F75D0E641DE598C3008A0597 /* Parser.swift in Sources */,
+				F75D0E611DE5986D008A0597 /* MentionParser.swift in Sources */,
 				F75D0E601DE595A2008A0597 /* MentionParserSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
