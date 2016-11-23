@@ -19,10 +19,4 @@ struct MessageParser: Parser {
         }
     }
     
-    func findMatches(in string: String) -> [AnyObject] {
-        guard let internalExpression = self.internalExpression else { return [] }
-        let matches = internalExpression.matches(in: string, range: NSMakeRange(0, string.characters.count))
-        return values(in: string, for: matches) as [AnyObject]
-    }
-    
 }

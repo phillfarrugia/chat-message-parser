@@ -27,7 +27,7 @@ class ChatMessage {
     }
     
     func resolve(parser: Parser, for string: String) -> [AnyObject]? {
-        let matches = parser.findMatches(in: string)
+        let matches = parser.matches(in: string)
         if (matches.count > 0) {
             return matches
         }

@@ -90,8 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				F7B994F91DE5430300925B23 /* AppDelegate.swift */,
-				F75D0E501DE5686B008A0597 /* MessageDataType.swift */,
 				F7B9951F1DE5539500925B23 /* ChatMessage.swift */,
+				F75D0E501DE5686B008A0597 /* MessageDataType.swift */,
 				F7B995191DE5450F00925B23 /* Parser.swift */,
 				F7B995211DE555D900925B23 /* MessageParser.swift */,
 				F7B995231DE555E800925B23 /* EmoticonParser.swift */,

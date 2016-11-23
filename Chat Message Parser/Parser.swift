@@ -14,10 +14,17 @@ protocol Parser {
     var pattern: String { get }
     
     init()
-    func findMatches(in string: String) -> [AnyObject]
+    func matches(in string: String) -> [AnyObject]
+    
 }
 
 extension Parser {
+    
+    func matches(in string: String) -> [AnyObject] {
+        guard let internalExpression = self.internalExpression else { return [] }
+        let matches = internalExpression.matches(in: string, range: NSMakeRange(0, string.characters.count))
+        return values(in: string, for: matches) as [AnyObject]
+    }
     
     internal func values(in string: String, for matches: [NSTextCheckingResult]) -> [String] {
         return matches.map {
