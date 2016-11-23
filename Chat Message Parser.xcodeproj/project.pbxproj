@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E501DE5686B008A0597 /* MessageDataType.swift */; };
+		F75D0E581DE59545008A0597 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E561DE59545008A0597 /* Quick.framework */; };
+		F75D0E591DE59545008A0597 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; };
+		F75D0E5B1DE59557008A0597 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F75D0E561DE59545008A0597 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F75D0E5C1DE59557008A0597 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7B994FA1DE5430300925B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994F91DE5430300925B23 /* AppDelegate.swift */; };
 		F7B994FC1DE5430300925B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994FB1DE5430300925B23 /* ViewController.swift */; };
 		F7B994FF1DE5430300925B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B994FD1DE5430300925B23 /* Main.storyboard */; };
@@ -31,8 +35,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F75D0E5A1DE5954B008A0597 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F75D0E5B1DE59557008A0597 /* Quick.framework in CopyFiles */,
+				F75D0E5C1DE59557008A0597 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F75D0E501DE5686B008A0597 /* MessageDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataType.swift; sourceTree = "<group>"; };
+		F75D0E561DE59545008A0597 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		F75D0E571DE59545008A0597 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		F7B994F61DE5430300925B23 /* Chat Message Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Message Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B994F91DE5430300925B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B994FB1DE5430300925B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,18 +82,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75D0E581DE59545008A0597 /* Quick.framework in Frameworks */,
+				F75D0E591DE59545008A0597 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F75D0E551DE59545008A0597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F75D0E561DE59545008A0597 /* Quick.framework */,
+				F75D0E571DE59545008A0597 /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7B994ED1DE5430200925B23 = {
 			isa = PBXGroup;
 			children = (
 				F7B994F81DE5430300925B23 /* Chat Message Parser */,
 				F7B9950D1DE5430300925B23 /* Chat Message ParserTests */,
 				F7B994F71DE5430300925B23 /* Products */,
+				F75D0E551DE59545008A0597 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +173,7 @@
 				F7B995061DE5430300925B23 /* Sources */,
 				F7B995071DE5430300925B23 /* Frameworks */,
 				F7B995081DE5430300925B23 /* Resources */,
+				F75D0E5A1DE5954B008A0597 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -391,6 +424,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 6VSG94VVFH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Chat Message ParserTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.phillfarrugia.Chat-Message-ParserTests";
@@ -406,6 +443,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 6VSG94VVFH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Chat Message ParserTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.phillfarrugia.Chat-Message-ParserTests";
