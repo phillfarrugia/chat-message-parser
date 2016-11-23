@@ -22,7 +22,6 @@
 		F7B994FF1DE5430300925B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B994FD1DE5430300925B23 /* Main.storyboard */; };
 		F7B995011DE5430300925B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B995001DE5430300925B23 /* Assets.xcassets */; };
 		F7B995041DE5430300925B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B995021DE5430300925B23 /* LaunchScreen.storyboard */; };
-		F7B9950F1DE5430300925B23 /* Chat_Message_ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9950E1DE5430300925B23 /* Chat_Message_ParserTests.swift */; };
 		F7B9951A1DE5450F00925B23 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995191DE5450F00925B23 /* Parser.swift */; };
 		F7B995201DE5539500925B23 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9951F1DE5539500925B23 /* ChatMessage.swift */; };
 		F7B995221DE555D900925B23 /* MentionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995211DE555D900925B23 /* MentionParser.swift */; };
@@ -73,7 +72,6 @@
 		F7B995031DE5430300925B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7B995051DE5430300925B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B9950A1DE5430300925B23 /* Chat Message ParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat Message ParserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7B9950E1DE5430300925B23 /* Chat_Message_ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_Message_ParserTests.swift; sourceTree = "<group>"; };
 		F7B995101DE5430300925B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B995191DE5450F00925B23 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		F7B9951F1DE5539500925B23 /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 		F7B9950D1DE5430300925B23 /* Chat Message ParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7B9950E1DE5430300925B23 /* Chat_Message_ParserTests.swift */,
 				F75D0E5F1DE595A2008A0597 /* ParserSpec.swift */,
 				F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */,
 				F75D0E651DE59901008A0597 /* MockValidParser.swift */,
@@ -291,7 +288,6 @@
 				F7C27F441DE5A68E00447C20 /* EmoticonParserSpec.swift in Sources */,
 				F7C27F451DE5A6A100447C20 /* EmoticonParser.swift in Sources */,
 				F75D0E661DE59901008A0597 /* MockValidParser.swift in Sources */,
-				F7B9950F1DE5430300925B23 /* Chat_Message_ParserTests.swift in Sources */,
 				F7C27F421DE5A11A00447C20 /* MentionParserSpec.swift in Sources */,
 				F75D0E641DE598C3008A0597 /* Parser.swift in Sources */,
 				F75D0E611DE5986D008A0597 /* MentionParser.swift in Sources */,
