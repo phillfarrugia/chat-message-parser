@@ -9,6 +9,7 @@
 import Foundation
 
 struct LinkParser: Parser {
+    
     internal var internalExpression: NSRegularExpression?
     internal var pattern: String = "(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?"
     

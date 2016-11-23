@@ -9,6 +9,7 @@
 import Foundation
 
 struct EmoticonParser: Parser {
+    
     internal var internalExpression: NSRegularExpression?
     internal var pattern: String = "\\(([^)]{0,15})\\)"
     
