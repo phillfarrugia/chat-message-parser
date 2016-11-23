@@ -13,6 +13,11 @@
 		F7B995011DE5430300925B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B995001DE5430300925B23 /* Assets.xcassets */; };
 		F7B995041DE5430300925B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B995021DE5430300925B23 /* LaunchScreen.storyboard */; };
 		F7B9950F1DE5430300925B23 /* Chat_Message_ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9950E1DE5430300925B23 /* Chat_Message_ParserTests.swift */; };
+		F7B9951A1DE5450F00925B23 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995191DE5450F00925B23 /* Parser.swift */; };
+		F7B995201DE5539500925B23 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9951F1DE5539500925B23 /* ChatMessage.swift */; };
+		F7B995221DE555D900925B23 /* MessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995211DE555D900925B23 /* MessageParser.swift */; };
+		F7B995241DE555E800925B23 /* EmoticonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995231DE555E800925B23 /* EmoticonParser.swift */; };
+		F7B995261DE555FC00925B23 /* LinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995251DE555FC00925B23 /* LinkParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		F7B9950A1DE5430300925B23 /* Chat Message ParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat Message ParserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B9950E1DE5430300925B23 /* Chat_Message_ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_Message_ParserTests.swift; sourceTree = "<group>"; };
 		F7B995101DE5430300925B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B995191DE5450F00925B23 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		F7B9951F1DE5539500925B23 /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		F7B995211DE555D900925B23 /* MessageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageParser.swift; sourceTree = "<group>"; };
+		F7B995231DE555E800925B23 /* EmoticonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonParser.swift; sourceTree = "<group>"; };
+		F7B995251DE555FC00925B23 /* LinkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				F7B994F91DE5430300925B23 /* AppDelegate.swift */,
+				F7B9951F1DE5539500925B23 /* ChatMessage.swift */,
+				F7B995191DE5450F00925B23 /* Parser.swift */,
+				F7B995211DE555D900925B23 /* MessageParser.swift */,
+				F7B995231DE555E800925B23 /* EmoticonParser.swift */,
+				F7B995251DE555FC00925B23 /* LinkParser.swift */,
 				F7B994FB1DE5430300925B23 /* ViewController.swift */,
 				F7B994FD1DE5430300925B23 /* Main.storyboard */,
 				F7B995001DE5430300925B23 /* Assets.xcassets */,
@@ -202,7 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B994FC1DE5430300925B23 /* ViewController.swift in Sources */,
+				F7B995201DE5539500925B23 /* ChatMessage.swift in Sources */,
+				F7B995261DE555FC00925B23 /* LinkParser.swift in Sources */,
+				F7B995241DE555E800925B23 /* EmoticonParser.swift in Sources */,
 				F7B994FA1DE5430300925B23 /* AppDelegate.swift in Sources */,
+				F7B995221DE555D900925B23 /* MessageParser.swift in Sources */,
+				F7B9951A1DE5450F00925B23 /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +430,7 @@
 				F7B995151DE5430300925B23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7B995161DE5430300925B23 /* Build configuration list for PBXNativeTarget "Chat Message ParserTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +439,7 @@
 				F7B995181DE5430300925B23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
