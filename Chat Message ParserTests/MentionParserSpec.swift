@@ -17,9 +17,7 @@ class ParserSpec: QuickSpec {
     override func spec() {
         
         describe("matches in string") {
-            
             context("valid regular expression", {
-                
                 context("input contains matches", {
                     it("should return an array containing a single match", closure: {
                         expect(self.validParser.internalExpression).toNot(beNil())
@@ -52,17 +50,20 @@ class ParserSpec: QuickSpec {
                     expect(self.invalidParser.matches(in: "\thisIsAnInvalidRegexPattern/\\").count).to(equal(0))
                 })
             })
-            
         }
         
         describe("values in string for matches") {
-            
             it("should map NSTextCheckingResults into correct string values", closure: {
                 let sampleString = "this is an &sample"
                 let matchResults = self.validParser.internalExpression?.matches(in: sampleString, range: NSMakeRange(0, sampleString.characters.count))
                 expect(self.validParser.values(in: sampleString, for: matchResults!)).to(equal(["&sample"]))
             })
-            
+
+            it("should handle NSTextCheckingResults not contained in string", closure: {
+                let sampleString = "this is an &sample"
+                let matchResults = self.validParser.internalExpression?.matches(in: sampleString, range: NSMakeRange(0, sampleString.characters.count))
+                expect(self.validParser.values(in: "not", for: matchResults!)).to(equal([]))
+            })
         }
         
     }

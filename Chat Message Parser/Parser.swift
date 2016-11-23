@@ -28,8 +28,11 @@ extension Parser {
     
     internal func values(in string: String, for matches: [NSTextCheckingResult]) -> [String] {
         return matches.map {
-            return (string as NSString).substring(with: $0.range)
-        }
+            if ($0.range.location + $0.range.length <= string.characters.count) {
+                return (string as NSString).substring(with: $0.range)
+            }
+            return nil
+        }.flatMap { $0 }
     }
 
 }
