@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E501DE5686B008A0597 /* MessageDataType.swift */; };
 		F7B994FA1DE5430300925B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994F91DE5430300925B23 /* AppDelegate.swift */; };
 		F7B994FC1DE5430300925B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994FB1DE5430300925B23 /* ViewController.swift */; };
 		F7B994FF1DE5430300925B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B994FD1DE5430300925B23 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F75D0E501DE5686B008A0597 /* MessageDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataType.swift; sourceTree = "<group>"; };
 		F7B994F61DE5430300925B23 /* Chat Message Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Message Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B994F91DE5430300925B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B994FB1DE5430300925B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F7B994F91DE5430300925B23 /* AppDelegate.swift */,
+				F75D0E501DE5686B008A0597 /* MessageDataType.swift */,
 				F7B9951F1DE5539500925B23 /* ChatMessage.swift */,
 				F7B995191DE5450F00925B23 /* Parser.swift */,
 				F7B995211DE555D900925B23 /* MessageParser.swift */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B994FC1DE5430300925B23 /* ViewController.swift in Sources */,
+				F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */,
 				F7B995201DE5539500925B23 /* ChatMessage.swift in Sources */,
 				F7B995261DE555FC00925B23 /* LinkParser.swift in Sources */,
 				F7B995241DE555E800925B23 /* EmoticonParser.swift in Sources */,
