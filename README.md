@@ -9,7 +9,7 @@ to be parsed out of the string.
 Example:
 <br>`ChatMessage("@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016").parse([.Mentions, .Links, .Emoticons])`
 
-### Verify
+### Verify Output
 
 1. Find an example usage of chat-message-parser inside `AppDelegate.swift`. This will parse mentions, emoticons and links
 from a message provided and print the result to the console.
