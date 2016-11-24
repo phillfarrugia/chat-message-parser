@@ -11,6 +11,7 @@
 		F74846741DE66A970079FDA9 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846721DE6681D0079FDA9 /* HTMLParser.swift */; };
 		F74846761DE672120079FDA9 /* HTMLParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846751DE672120079FDA9 /* HTMLParserSpec.swift */; };
 		F74846781DE689BA0079FDA9 /* LinkParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846771DE689BA0079FDA9 /* LinkParserSpec.swift */; };
+		F748467B1DE69DA90079FDA9 /* ChatMessageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748467A1DE69DA90079FDA9 /* ChatMessageSpec.swift */; };
 		F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E501DE5686B008A0597 /* MessageDataType.swift */; };
 		F75D0E581DE59545008A0597 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E561DE59545008A0597 /* Quick.framework */; };
 		F75D0E591DE59545008A0597 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; };
@@ -65,6 +66,7 @@
 		F74846721DE6681D0079FDA9 /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		F74846751DE672120079FDA9 /* HTMLParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParserSpec.swift; sourceTree = "<group>"; };
 		F74846771DE689BA0079FDA9 /* LinkParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkParserSpec.swift; sourceTree = "<group>"; };
+		F748467A1DE69DA90079FDA9 /* ChatMessageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageSpec.swift; sourceTree = "<group>"; };
 		F75D0E501DE5686B008A0597 /* MessageDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataType.swift; sourceTree = "<group>"; };
 		F75D0E561DE59545008A0597 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		F75D0E571DE59545008A0597 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				F74846791DE699300079FDA9 /* Mocks */,
 				F75D0E5F1DE595A2008A0597 /* ParserSpec.swift */,
+				F748467A1DE69DA90079FDA9 /* ChatMessageSpec.swift */,
 				F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */,
 				F7C27F431DE5A68E00447C20 /* EmoticonParserSpec.swift */,
 				F74846771DE689BA0079FDA9 /* LinkParserSpec.swift */,
@@ -313,6 +316,7 @@
 				F75D0E641DE598C3008A0597 /* Parser.swift in Sources */,
 				F75D0E611DE5986D008A0597 /* MentionParser.swift in Sources */,
 				F75D0E601DE595A2008A0597 /* ParserSpec.swift in Sources */,
+				F748467B1DE69DA90079FDA9 /* ChatMessageSpec.swift in Sources */,
 				F74846741DE66A970079FDA9 /* HTMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
