@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let results = ChatMessage("@phill http://google.com.au/ (poop) (thisistoolongitwillnevergetmatched)").parse([.Mentions, .Links, .Emoticons])
+        let results = ChatMessage("@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016").parse([.Mentions, .Links, .Emoticons])
         print(results)
         
         return true
