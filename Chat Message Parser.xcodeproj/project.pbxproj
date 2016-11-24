@@ -109,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F74846791DE699300079FDA9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */,
+				F75D0E651DE59901008A0597 /* MockValidParser.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
 		F75D0E551DE59545008A0597 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,13 +169,12 @@
 		F7B9950D1DE5430300925B23 /* Chat Message ParserTests */ = {
 			isa = PBXGroup;
 			children = (
+				F74846791DE699300079FDA9 /* Mocks */,
 				F75D0E5F1DE595A2008A0597 /* ParserSpec.swift */,
-				F75D0E621DE598A6008A0597 /* MockInvalidParser.swift */,
-				F75D0E651DE59901008A0597 /* MockValidParser.swift */,
 				F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */,
 				F7C27F431DE5A68E00447C20 /* EmoticonParserSpec.swift */,
-				F74846751DE672120079FDA9 /* HTMLParserSpec.swift */,
 				F74846771DE689BA0079FDA9 /* LinkParserSpec.swift */,
+				F74846751DE672120079FDA9 /* HTMLParserSpec.swift */,
 				F7B995101DE5430300925B23 /* Info.plist */,
 			);
 			path = "Chat Message ParserTests";
