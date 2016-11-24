@@ -66,5 +66,13 @@ class ParserSpec: QuickSpec {
             })
         }
         
+        describe("sanitize values", closure: {
+            it("should by default return the exact same values", closure: {
+                expect(self.validParser.sanitize(values: ["test", "one", "two"])).to(equal(["test", "one", "two"]))
+                expect(self.validParser.sanitize(values: ["test"])).to(equal(["test"]))
+                expect(self.validParser.sanitize(values: [])).to(equal([]))
+            })
+        })
+        
     }
 }

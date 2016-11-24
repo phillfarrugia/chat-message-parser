@@ -40,5 +40,19 @@ class MentionParserSpec: QuickSpec {
             })
         }
         
+        describe("sanitize values", closure: {
+            it("should remove @ symbols from strings if exist", closure: {
+                expect(self.mentionParser.sanitize(values: ["@chris"])).to(equal(["chris"]))
+                expect(self.mentionParser.sanitize(values: ["@phill22"])).to(equal(["phill22"]))
+                expect(self.mentionParser.sanitize(values: ["@meli12ssa"])).to(equal(["meli12ssa"]))
+            })
+            
+            it("should return not modify string if no @ symbols", closure: {
+                expect(self.mentionParser.sanitize(values: ["chris"])).to(equal(["chris"]))
+                expect(self.mentionParser.sanitize(values: ["phill22"])).to(equal(["phill22"]))
+                expect(self.mentionParser.sanitize(values: ["meli12ssa"])).to(equal(["meli12ssa"]))
+            })
+        })
+        
     }
 }
