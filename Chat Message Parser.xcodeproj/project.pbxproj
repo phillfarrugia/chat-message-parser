@@ -12,6 +12,8 @@
 		F74846761DE672120079FDA9 /* HTMLParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846751DE672120079FDA9 /* HTMLParserSpec.swift */; };
 		F74846781DE689BA0079FDA9 /* LinkParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846771DE689BA0079FDA9 /* LinkParserSpec.swift */; };
 		F748467B1DE69DA90079FDA9 /* ChatMessageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748467A1DE69DA90079FDA9 /* ChatMessageSpec.swift */; };
+		F748467C1DE69EEF0079FDA9 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9951F1DE5539500925B23 /* ChatMessage.swift */; };
+		F748467D1DE69F150079FDA9 /* MessageDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E501DE5686B008A0597 /* MessageDataType.swift */; };
 		F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E501DE5686B008A0597 /* MessageDataType.swift */; };
 		F75D0E581DE59545008A0597 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E561DE59545008A0597 /* Quick.framework */; };
 		F75D0E591DE59545008A0597 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; };
@@ -312,7 +314,9 @@
 				F74846761DE672120079FDA9 /* HTMLParserSpec.swift in Sources */,
 				F74846781DE689BA0079FDA9 /* LinkParserSpec.swift in Sources */,
 				F75D0E661DE59901008A0597 /* MockValidParser.swift in Sources */,
+				F748467C1DE69EEF0079FDA9 /* ChatMessage.swift in Sources */,
 				F7C27F421DE5A11A00447C20 /* MentionParserSpec.swift in Sources */,
+				F748467D1DE69F150079FDA9 /* MessageDataType.swift in Sources */,
 				F75D0E641DE598C3008A0597 /* Parser.swift in Sources */,
 				F75D0E611DE5986D008A0597 /* MentionParser.swift in Sources */,
 				F75D0E601DE595A2008A0597 /* ParserSpec.swift in Sources */,

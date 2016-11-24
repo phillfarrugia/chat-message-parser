@@ -16,11 +16,25 @@ class ChatMessageSpec: QuickSpec {
         describe("parse data types", {
             
             it("should parse matches for a single data type", closure: {
-                
+                let result = ChatMessage("@phill").parse([.Mentions])
+                let data = result.data(using: String.Encoding.utf8)!
+                do {
+                    let jsonDict = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String: [String]]
+                    expect(jsonDict).toNot(beNil())
+                    expect(jsonDict["mentions"]).to(equal(["phill"]))
+                }
+                catch _ { }
             })
             
             it("should parse matches for multiple data types", closure: {
-                
+                let result = ChatMessage("@phill @jack @johnathen").parse([.Mentions])
+                let data = result.data(using: String.Encoding.utf8)!
+                do {
+                    let jsonDict = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String: [String]]
+                    expect(jsonDict).toNot(beNil())
+                    expect(jsonDict["mentions"]).to(equal(["phill", "jack", "johnathen"]))
+                }
+                catch _ { }
             })
             
         })
