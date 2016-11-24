@@ -25,7 +25,7 @@
 		F75D0E641DE598C3008A0597 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B995191DE5450F00925B23 /* Parser.swift */; };
 		F75D0E661DE59901008A0597 /* MockValidParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E651DE59901008A0597 /* MockValidParser.swift */; };
 		F7B994FA1DE5430300925B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994F91DE5430300925B23 /* AppDelegate.swift */; };
-		F7B994FC1DE5430300925B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994FB1DE5430300925B23 /* ViewController.swift */; };
+		F7B994FC1DE5430300925B23 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B994FB1DE5430300925B23 /* SampleViewController.swift */; };
 		F7B994FF1DE5430300925B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B994FD1DE5430300925B23 /* Main.storyboard */; };
 		F7B995011DE5430300925B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B995001DE5430300925B23 /* Assets.xcassets */; };
 		F7B995041DE5430300925B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B995021DE5430300925B23 /* LaunchScreen.storyboard */; };
@@ -77,7 +77,7 @@
 		F75D0E651DE59901008A0597 /* MockValidParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockValidParser.swift; sourceTree = "<group>"; };
 		F7B994F61DE5430300925B23 /* Chat Message Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Message Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B994F91DE5430300925B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7B994FB1DE5430300925B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7B994FB1DE5430300925B23 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		F7B994FE1DE5430300925B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7B995001DE5430300925B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B995031DE5430300925B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				F7B995231DE555E800925B23 /* EmoticonParser.swift */,
 				F7B995251DE555FC00925B23 /* LinkParser.swift */,
 				F74846721DE6681D0079FDA9 /* HTMLParser.swift */,
-				F7B994FB1DE5430300925B23 /* ViewController.swift */,
+				F7B994FB1DE5430300925B23 /* SampleViewController.swift */,
 				F7B994FD1DE5430300925B23 /* Main.storyboard */,
 				F7B995001DE5430300925B23 /* Assets.xcassets */,
 				F7B995021DE5430300925B23 /* LaunchScreen.storyboard */,
@@ -291,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B994FC1DE5430300925B23 /* ViewController.swift in Sources */,
+				F7B994FC1DE5430300925B23 /* SampleViewController.swift in Sources */,
 				F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */,
 				F74846731DE6681D0079FDA9 /* HTMLParser.swift in Sources */,
 				F7B995201DE5539500925B23 /* ChatMessage.swift in Sources */,
