@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F74846731DE6681D0079FDA9 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846721DE6681D0079FDA9 /* HTMLParser.swift */; };
 		F74846741DE66A970079FDA9 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846721DE6681D0079FDA9 /* HTMLParser.swift */; };
+		F74846761DE672120079FDA9 /* HTMLParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846751DE672120079FDA9 /* HTMLParserSpec.swift */; };
 		F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E501DE5686B008A0597 /* MessageDataType.swift */; };
 		F75D0E581DE59545008A0597 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E561DE59545008A0597 /* Quick.framework */; };
 		F75D0E591DE59545008A0597 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		F74846721DE6681D0079FDA9 /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		F74846751DE672120079FDA9 /* HTMLParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParserSpec.swift; sourceTree = "<group>"; };
 		F75D0E501DE5686B008A0597 /* MessageDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataType.swift; sourceTree = "<group>"; };
 		F75D0E561DE59545008A0597 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		F75D0E571DE59545008A0597 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				F75D0E651DE59901008A0597 /* MockValidParser.swift */,
 				F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */,
 				F7C27F431DE5A68E00447C20 /* EmoticonParserSpec.swift */,
+				F74846751DE672120079FDA9 /* HTMLParserSpec.swift */,
 				F7B995101DE5430300925B23 /* Info.plist */,
 			);
 			path = "Chat Message ParserTests";
@@ -292,6 +295,7 @@
 				F75D0E631DE598A6008A0597 /* MockInvalidParser.swift in Sources */,
 				F7C27F441DE5A68E00447C20 /* EmoticonParserSpec.swift in Sources */,
 				F7C27F451DE5A6A100447C20 /* EmoticonParser.swift in Sources */,
+				F74846761DE672120079FDA9 /* HTMLParserSpec.swift in Sources */,
 				F75D0E661DE59901008A0597 /* MockValidParser.swift in Sources */,
 				F7C27F421DE5A11A00447C20 /* MentionParserSpec.swift in Sources */,
 				F75D0E641DE598C3008A0597 /* Parser.swift in Sources */,
