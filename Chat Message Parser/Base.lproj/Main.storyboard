@@ -22,21 +22,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-rC-UCP">
-                                <rect key="frame" x="50" y="233" width="275" height="200"/>
+                                <rect key="frame" x="50" y="114" width="275" height="200"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a message here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TEW-xf-1Ki">
                                         <rect key="frame" x="0.0" y="170" width="275" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-Mw-qma">
                                         <rect key="frame" x="0.0" y="0.0" width="275" height="150"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="XHt-K0-Cll"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -55,13 +54,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vOo-rC-UCP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="875-fR-lyc"/>
+                            <constraint firstItem="vOo-rC-UCP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="EIn-QK-5ZL"/>
                             <constraint firstAttribute="trailing" secondItem="vOo-rC-UCP" secondAttribute="trailing" constant="50" id="O9F-dl-vSk"/>
                             <constraint firstItem="vOo-rC-UCP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="iar-mt-nyQ"/>
                             <constraint firstItem="vOo-rC-UCP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qri-pw-JTg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chat Message Parser" id="DRs-ku-Dl2"/>
+                    <connections>
+                        <outlet property="textField" destination="TEW-xf-1Ki" id="hbN-W1-MDM"/>
+                        <outlet property="textView" destination="pgU-Mw-qma" id="fPS-Ca-4Qx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
