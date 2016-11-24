@@ -174,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				F74846791DE699300079FDA9 /* Mocks */,
-				F75D0E5F1DE595A2008A0597 /* ParserSpec.swift */,
 				F748467A1DE69DA90079FDA9 /* ChatMessageSpec.swift */,
+				F75D0E5F1DE595A2008A0597 /* ParserSpec.swift */,
 				F7C27F411DE5A11A00447C20 /* MentionParserSpec.swift */,
 				F7C27F431DE5A68E00447C20 /* EmoticonParserSpec.swift */,
 				F74846771DE689BA0079FDA9 /* LinkParserSpec.swift */,

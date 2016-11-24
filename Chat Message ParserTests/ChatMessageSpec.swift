@@ -168,11 +168,14 @@ class ChatMessageSpec: QuickSpec {
         describe("resolve parser for string", {
             
             it("should return matches from associated data type parser", closure: {
-                
+                let mockParser = MockValidParser()
+                let result = ChatMessage.resolve(parser: mockParser, for: "&phill") as! [String]
+                expect(result).to(equal(["&phill"]))
             })
             
             it("should return nil if no matches for data type", closure: {
-                
+                let mockParser = MockValidParser()
+                expect(ChatMessage.resolve(parser: mockParser, for: "no matches in string")).to(beNil())
             })
             
         })
@@ -180,11 +183,16 @@ class ChatMessageSpec: QuickSpec {
         describe("serialize dictionary", {
             
             it("should serialize a dictionary into a valid json string", closure: {
-                
-            })
-            
-            it("should return an empty string if serialization fails", closure: {
-                
+                let dict = ["serialize": ["this" as AnyObject]]
+                let result = ChatMessage.serialize(dictionary: dict)!
+                let data = result.data(using: String.Encoding.utf8)!
+                do {
+                    let jsonDict = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as!  [String: [AnyObject]]
+                    expect(jsonDict).toNot(beNil())
+                    let serializeValue = jsonDict["serialize"] as! [String]
+                    expect(serializeValue).to(equal(["this"]))
+                }
+                catch _ { }
             })
             
         })
