@@ -47,5 +47,19 @@ class EmoticonParserSpec: QuickSpec {
             })
         }
         
+        describe("sanitize values", closure: {
+            it("should remove parenthesis symbols from strings if exist", closure: {
+                expect(self.emoticonParser.sanitize(values: ["(sample)"])).to(equal(["sample"]))
+                expect(self.emoticonParser.sanitize(values: ["(wave)"])).to(equal(["wave"]))
+                expect(self.emoticonParser.sanitize(values: ["(hello)"])).to(equal(["hello"]))
+            })
+            
+            it("should return not modify string if no parenthesis symbols", closure: {
+                expect(self.emoticonParser.sanitize(values: ["sample"])).to(equal(["sample"]))
+                expect(self.emoticonParser.sanitize(values: ["wave"])).to(equal(["wave"]))
+                expect(self.emoticonParser.sanitize(values: ["hello"])).to(equal(["hello"]))
+            })
+        })
+        
     }
 }
