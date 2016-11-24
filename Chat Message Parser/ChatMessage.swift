@@ -16,20 +16,34 @@ class ChatMessage {
         self.message = message
     }
     
-    func parse(_ dataTypes: [MessageDataType]) -> [String: [AnyObject]] {
+    func parse(_ dataTypes: [MessageDataType]) -> String {
         var results: [String: [AnyObject]] = [:]
         for dataType in dataTypes {
             if let matches = resolve(parser: dataType.parser, for: message) {
                 results[dataType.title] = matches
             }
         }
-        return results
+        guard let serializedResults = serialize(dictionary: results) else { return "" }
+        return serializedResults
     }
     
     private func resolve(parser: Parser, for string: String) -> [AnyObject]? {
         let matches = parser.matches(in: string)
         if (matches.count > 0) {
             return matches
+        }
+        return nil
+    }
+    
+    private func serialize(dictionary: [String: [AnyObject]]) -> String? {
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: dictionary, options: .prettyPrinted)
+            if let jsonString = String(data: jsonData, encoding: String.Encoding.utf8) {
+                return jsonString
+            }
+        }
+        catch let error {
+            print("\(error)")
         }
         return nil
     }
