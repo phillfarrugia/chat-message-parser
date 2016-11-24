@@ -7,7 +7,7 @@ a ChatMessage object with a string. Call the parse() method and pass in an Array
 to be parsed out of the string.
 
 Example:
-`ChatMessage("@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016").parse([.Mentions, .Links, .Emoticons])`
+<br>`ChatMessage("@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016").parse([.Mentions, .Links, .Emoticons])`
 
 ### Verify
 
