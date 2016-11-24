@@ -17,6 +17,9 @@ from a message provided and print the result to the console.
 2. Run the project, I have provided a very simple `SampleViewController.swift` class that allows the user to type
 a message into a UITextField, press Enter on the keyboard and see the output in a UITextView.
 
+Note: Output JSON String provided via email specified URLs be unencoded in JSON String i.e. `{ "url": "https://twitter.com/jdorfman/status/430511497475670016", "title": "Twitter / jdorfman: nice @littlebigdetail from ..." }`
+In order to be a valid encoded JSON String, URLs should be escaped such as `https:\/\/twitter.com\/jdorfman\/status\/430511497475670016`.
+
 ### Unit Tests
 
 Each core Class, Struct or File has a level of suitable unit tests in the `Chat Message ParserTests` target.
