@@ -27,7 +27,7 @@ struct LinkParser: Parser {
         return urls.map { ["url": $0, "title": title(for: $0)] } as [AnyObject]
     }
     
-    private func title(for urlString: String) -> String? {
+    func title(for urlString: String) -> String? {
         if let url = URL(string: urlString) {
             do {
                 let html = try NSString.init(contentsOf: url, encoding: String.Encoding.ascii.rawValue)
