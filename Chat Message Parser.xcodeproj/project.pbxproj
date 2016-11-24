@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F74846731DE6681D0079FDA9 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846721DE6681D0079FDA9 /* HTMLParser.swift */; };
+		F74846741DE66A970079FDA9 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74846721DE6681D0079FDA9 /* HTMLParser.swift */; };
 		F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D0E501DE5686B008A0597 /* MessageDataType.swift */; };
 		F75D0E581DE59545008A0597 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E561DE59545008A0597 /* Quick.framework */; };
 		F75D0E591DE59545008A0597 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75D0E571DE59545008A0597 /* Nimble.framework */; };
@@ -58,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F74846721DE6681D0079FDA9 /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		F75D0E501DE5686B008A0597 /* MessageDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataType.swift; sourceTree = "<group>"; };
 		F75D0E561DE59545008A0597 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		F75D0E571DE59545008A0597 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 				F7B995211DE555D900925B23 /* MentionParser.swift */,
 				F7B995231DE555E800925B23 /* EmoticonParser.swift */,
 				F7B995251DE555FC00925B23 /* LinkParser.swift */,
+				F74846721DE6681D0079FDA9 /* HTMLParser.swift */,
 				F7B994FB1DE5430300925B23 /* ViewController.swift */,
 				F7B994FD1DE5430300925B23 /* Main.storyboard */,
 				F7B995001DE5430300925B23 /* Assets.xcassets */,
@@ -270,6 +274,7 @@
 			files = (
 				F7B994FC1DE5430300925B23 /* ViewController.swift in Sources */,
 				F75D0E511DE5686B008A0597 /* MessageDataType.swift in Sources */,
+				F74846731DE6681D0079FDA9 /* HTMLParser.swift in Sources */,
 				F7B995201DE5539500925B23 /* ChatMessage.swift in Sources */,
 				F7B995261DE555FC00925B23 /* LinkParser.swift in Sources */,
 				F7B995241DE555E800925B23 /* EmoticonParser.swift in Sources */,
@@ -292,6 +297,7 @@
 				F75D0E641DE598C3008A0597 /* Parser.swift in Sources */,
 				F75D0E611DE5986D008A0597 /* MentionParser.swift in Sources */,
 				F75D0E601DE595A2008A0597 /* ParserSpec.swift in Sources */,
+				F74846741DE66A970079FDA9 /* HTMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
